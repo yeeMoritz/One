@@ -1,0 +1,532 @@
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <style media="screen">
+
+      body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #202020, #111119);
+  background-image: url(https://cdn.dodowallpaper.com/full/723/solar-system-wallpapers-6.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+  $('.rain.front-row').append(drops);
+  $('.rain.back-row').append(backDrops);
+}
+
+$('.splat-toggle.toggle').on('click', function() {
+  $('body').toggleClass('splat-toggle');
+  $('.splat-toggle.toggle').toggleClass('active');
+  makeItRain();
+});
+
+$('.back-row-toggle.toggle').on('click', function() {
+  $('body').toggleClass('back-row-toggle');
+  $('.back-row-toggle.toggle').toggleClass('active');
+  makeItRain();
+});
+
+$('.single-toggle.toggle').on('click', function() {
+  $('body').toggleClass('single-toggle');
+  $('.single-toggle.toggle').toggleClass('active');
+  makeItRain();
+});
+
+makeItRain();
+
+@media screen and (max-width: 600px) {
+  body,
+  html {
+    font-size: 48%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body,
+  html {
+    font-size: 53%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body,
+  html {
+    font-size: 57%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body,
+  html {
+    font-size: 70%;
+  }
+}
+
+header {
+  background: #33455e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  transition: 200ms all;
+  height: 7rem;
+  z-index: 1;
+}
+
+header nav#normal {
+  color: #000;
+  display: inline-block;
+  z-index: 3;
+}
+
+@media screen and (max-width: 800px) {
+  header nav#normal {
+    display: none;
+    z-index: 3
+  }
+}
+
+header nav#normal ul {
+  margin: 0;
+  padding: 0;
+  transition: all 300ms;
+  display: inline-block;
+  z-index: 3
+}
+
+header nav#normal ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  position: relative;
+  transition: all 300ms;
+  z-index: 3
+}
+
+header nav#normal ul li a {
+  display: inline-block;
+  padding: 2.17rem;
+  float: left;
+  min-width: 12rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 1px 0 0;
+  text-decoration: none;
+  background: #000;
+  font-weight: 300;
+  transition: all 300ms;
+  font-family: "Roboto", sans-serif;
+  z-index: 3
+}
+
+header nav#normal ul li:hover > a {
+  background: #000;
+  z-index: 3
+}
+
+header nav#normal ul li ul {
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: 300ms all;
+  max-height: 0;
+  z-index: 3;
+}
+
+header nav#normal ul li ul li {
+  z-index: 3
+}
+
+header nav#normal ul li:hover > ul {
+  max-height: 700px;
+  z-index: 3
+}
+
+header nav#mobile {
+  color: #000;
+  display: none;
+  z-index: 3
+}
+
+@media screen and (max-width: 800px) {
+  header nav#mobile {
+    display: block;
+    z-index: 3
+  }
+}
+
+header nav #menu {
+  padding: 2.17rem 5% 2.17rem 5%;
+  float: left;
+  width: 90%;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 300;
+  transition: all 500ms;
+  font-family: "Roboto", sans-serif;
+  z-index: 3
+}
+
+header nav#mobile ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  transition: all 500ms;
+  overflow: hidden;
+  float: left;
+  z-index: 3
+}
+
+header nav#mobile:hover > ul {
+  max-height: 800px;
+  z-index: 3
+}
+
+header nav#mobile ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  transition: all 500ms;
+   1px solid #fff;
+  z-index: 3
+}
+
+header nav#mobile ul li a {
+  display: inline-block;
+  padding: 2.17rem 5% 2.17rem 5%;
+  float: left;
+  min-width: 12rem;
+  width: 90%;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  background: #c8354e;
+  font-weight: 300;
+  transition: all 500ms;
+  font-family: "Roboto", sans-serif;
+  z-index: 3
+}
+
+header nav#mobile ul li:hover > a {
+  background: #fff;
+  z-index: 3
+}
+
+header nav#mobile ul li ul {
+  width: 100%;
+  transition: all 500ms;
+  max-height: 0;
+  overflow: hidden;
+  float: left;
+  z-index: 3
+}
+
+header nav#mobile ul li ul li {
+  display: block;
+  float: left;
+  background: #8c1e31;
+  transition: all 500ms;
+  z-index: 3
+}
+
+header nav#mobile ul li ul li a {
+  background: #8c1e31;
+  z-index: 3
+}
+
+header nav#mobile ul li:hover > ul {
+  max-height: 500px;
+  z-index: 3
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+      z-index: 3
+   }
+}
+
+
+.rain {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.rain.back-row {
+  display: none;
+  z-index: 0;
+  bottom: 60px;
+  opacity: 0.5;
+}
+
+body.back-row-toggle .rain.back-row {
+  display: block;
+}
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 15px;
+  height: 120px;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(90vh);
+  }
+  100% {
+    transform: translateY(90vh);
+  }
+}
+
+.stem {
+  width: 1px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+  animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.splat {
+  width: 15px;
+  height: 10px;
+  border-top: 2px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: none;
+}
+
+body.splat-toggle .splat {
+  display: block;
+}
+
+@keyframes splat {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+.toggles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.toggle {
+  position: absolute;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 51px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.toggle:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.toggle.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.splat-toggle {
+  top: 20px;
+}
+
+.back-row-toggle {
+  top: 90px;
+  padding-top: 14px;
+}
+
+.single-toggle {
+  top: 160px;
+}
+
+body.single-toggle .drop {
+  display: none;
+}
+
+body.single-toggle .drop:nth-child(10) {
+  display: block;
+}
+style="left: 3%; bottom: 105%; animation-delay: 0.37s; animation-duration: 0.537s;"><div class="stem" style="animation-delay: 0.37s; animation-duration: 0.537s;"></div><div class="splat" style="animation-delay: 0.37s; animation-duration: 0.537s;"></div></div><div class="drop" style="left: 5%; bottom: 103%; animation-delay: 0.80s; animation-duration: 0.580s;"><div class="stem" style="animation-delay: 0.80s; animation-duration: 0.580s;"></div><div class="splat" style="animation-delay: 0.80s; animation-duration: 0.580s;"></div></div><div class="drop" style="left: 8%; bottom: 105%; animation-delay: 0.62s; animation-duration: 0.562s;"><div class="stem" style="animation-delay: 0.62s; animation-duration: 0.562s;"></div><div class="splat" style="animation-delay: 0.62s; animation-duration: 0.562s;"></div></div><div class="drop" style="left: 10%; bottom: 103%; animation-delay: 0.77s; animation-duration: 0.577s;"><div class="stem" style="animation-delay: 0.77s; animation-duration: 0.577s;"></div><div class="splat" style="animation-delay: 0.77s; animation-duration: 0.577s;"></div></div><div class="drop" style="left: 12%; bottom: 103%; animation-delay: 0.60s; animation-duration: 0.560s;"><div class="stem" style="animation-delay: 0.60s; animation-duration: 0.560s;"></div><div class="splat" style="animation-delay: 0.60s; animation-duration: 0.560s;"></div></div><div class="drop" style="left: 17%; bottom: 109%; animation-delay: 0.41s; animation-duration: 0.541s;"><div class="stem" style="animation-delay: 0.41s; animation-duration: 0.541s;"></div><div class="splat" style="animation-delay: 0.41s; animation-duration: 0.541s;"></div></div><div class="drop" style="left: 22%; bottom: 109%; animation-delay: 0.55s; animation-duration: 0.555s;"><div class="stem" style="animation-delay: 0.55s; animation-duration: 0.555s;"></div><div class="splat" style="animation-delay: 0.55s; animation-duration: 0.555s;"></div></div><div class="drop" style="left: 27%; bottom: 109%; animation-delay: 0.90s; animation-duration: 0.590s;"><div class="stem" style="animation-delay: 0.90s; animation-duration: 0.590s;"></div><div class="splat" style="animation-delay: 0.90s; animation-duration: 0.590s;"></div></div><div class="drop" style="left: 29%; bottom: 103%; animation-delay: 0.33s; animation-duration: 0.533s;"><div class="stem" style="animation-delay: 0.33s; animation-duration: 0.533s;"></div><div class="splat" style="animation-delay: 0.33s; animation-duration: 0.533s;"></div></div><div class="drop" style="left: 34%; bottom: 109%; animation-delay: 0.40s; animation-duration: 0.540s;"><div class="stem" style="animation-delay: 0.40s; animation-duration: 0.540s;"></div><div class="splat" style="animation-delay: 0.40s; animation-duration: 0.540s;"></div></div><div class="drop" style="left: 36%; bottom: 103%; animation-delay: 0.29s; animation-duration: 0.529s;"><div class="stem" style="animation-delay: 0.29s; animation-duration: 0.529s;"></div><div class="splat" style="animation-delay: 0.29s; animation-duration: 0.529s;"></div></div><div class="drop" style="left: 39%; bottom: 105%; animation-delay: 0.42s; animation-duration: 0.542s;"><div class="stem" style="animation-delay: 0.42s; animation-duration: 0.542s;"></div><div class="splat" style="animation-delay: 0.42s; animation-duration: 0.542s;"></div></div><div class="drop" style="left: 42%; bottom: 105%; animation-delay: 0.55s; animation-duration: 0.555s;"><div class="stem" style="animation-delay: 0.55s; animation-duration: 0.555s;"></div><div class="splat" style="animation-delay: 0.55s; animation-duration: 0.555s;"></div></div><div class="drop" style="left: 45%; bottom: 105%; animation-delay: 0.65s; animation-duration: 0.565s;"><div class="stem" style="animation-delay: 0.65s; animation-duration: 0.565s;"></div><div class="splat" style="animation-delay: 0.65s; animation-duration: 0.565s;"></div></div><div class="drop" style="left: 49%; bottom: 107%; animation-delay: 0.6s; animation-duration: 0.56s;"><div class="stem" style="animation-delay: 0.6s; animation-duration: 0.56s;"></div><div class="splat" style="animation-delay: 0.6s; animation-duration: 0.56s;"></div></div><div class="drop" style="left: 53%; bottom: 107%; animation-delay: 0.56s; animation-duration: 0.556s;"><div class="stem" style="animation-delay: 0.56s; animation-duration: 0.556s;"></div><div class="splat" style="animation-delay: 0.56s; animation-duration: 0.556s;"></div></div><div class="drop" style="left: 58%; bottom: 109%; animation-delay: 0.10s; animation-duration: 0.510s;"><div class="stem" style="animation-delay: 0.10s; animation-duration: 0.510s;"></div><div class="splat" style="animation-delay: 0.10s; animation-duration: 0.510s;"></div></div><div class="drop" style="left: 61%; bottom: 105%; animation-delay: 0.52s; animation-duration: 0.552s;"><div class="stem" style="animation-delay: 0.52s; animation-duration: 0.552s;"></div><div class="splat" style="animation-delay: 0.52s; animation-duration: 0.552s;"></div></div><div class="drop" style="left: 63%; bottom: 103%; animation-delay: 0.90s; animation-duration: 0.590s;"><div class="stem" style="animation-delay: 0.90s; animation-duration: 0.590s;"></div><div class="splat" style="animation-delay: 0.90s; animation-duration: 0.590s;"></div></div><div class="drop" style="left: 67%; bottom: 107%; animation-delay: 0.83s; animation-duration: 0.583s;"><div class="stem" style="animation-delay: 0.83s; animation-duration: 0.583s;"></div><div class="splat" style="animation-delay: 0.83s; animation-duration: 0.583s;"></div></div><div class="drop" style="left: 70%; bottom: 105%; animation-delay: 0.56s; animation-duration: 0.556s;"><div class="stem" style="animation-delay: 0.56s; animation-duration: 0.556s;"></div><div class="splat" style="animation-delay: 0.56s; animation-duration: 0.556s;"></div></div><div class="drop" style="left: 74%; bottom: 107%; animation-delay: 0.53s; animation-duration: 0.553s;"><div class="stem" style="animation-delay: 0.53s; animation-duration: 0.553s;"></div><div class="splat" style="animation-delay: 0.53s; animation-duration: 0.553s;"></div></div><div class="drop" style="left: 79%; bottom: 109%; animation-delay: 0.30s; animation-duration: 0.530s;"><div class="stem" style="animation-delay: 0.30s; animation-duration: 0.530s;"></div><div class="splat" style="animation-delay: 0.30s; animation-duration: 0.530s;"></div></div><div class="drop" style="left: 83%; bottom: 107%; animation-delay: 0.8s; animation-duration: 0.58s;"><div class="stem" style="animation-delay: 0.8s; animation-duration: 0.58s;"></div><div class="splat" style="animation-delay: 0.8s; animation-duration: 0.58s;"></div></div><div class="drop" style="left: 88%; bottom: 109%; animation-delay: 0.74s; animation-duration: 0.574s;"><div class="stem" style="animation-delay: 0.74s; animation-duration: 0.574s;"></div><div class="splat" style="animation-delay: 0.74s; animation-duration: 0.574s;"></div></div><div class="drop" style="left: 90%; bottom: 103%; animation-delay: 0.54s; animation-duration: 0.554s;"><div class="stem" style="animation-delay: 0.54s; animation-duration: 0.554s;"></div><div class="splat" style="animation-delay: 0.54s; animation-duration: 0.554s;"></div></div><div class="drop" style="left: 94%; bottom: 107%; animation-delay: 0.45s; animation-duration: 0.545s;"><div class="stem" style="animation-delay: 0.45s; animation-duration: 0.545s;"></div><div class="splat" style="animation-delay: 0.45s; animation-duration: 0.545s;"></div></div><div class="drop" style="left: 97%; bottom: 105%; animation-delay: 0.42s; animation-duration: 0.542s;"><div class="stem" style="animation-delay: 0.42s; animation-duration: 0.542s;"></div><div class="splat" style="animation-delay: 0.42s; animation-duration: 0.542s;"></div></div><div class="drop" style="left: 99%; bottom: 103%; animation-delay: 0.57s; animation-duration: 0.557s;"><div class="stem" style="animation-delay: 0.57s; animation-duration: 0.557s;"></div><div class="splat" style="animation-delay: 0.57s; animation-duration: 0.557s;"></div></div><div class="drop" style="left: 104%; bottom: 109%; animation-delay: 0.92s; animation-duration: 0.592s;"><div class="stem" style="animation-delay: 0.92s; animation-duration: 0.592s;"></div><div class="splat" style="animation-delay: 0.92s; animation-duration: 0.592s;">
+
+
+    </style>
+
+    <script type=JavaScript>
+
+    var makeItRain = function() {
+      //clear out everything
+      $('.rain').empty();
+
+      var increment = 0;
+      var drops = "";
+      var backDrops = "";
+
+      while (increment < 100) {
+        //couple random numbers to use for various randomizations
+        //random number between 98 and 1
+        var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+        //random number between 5 and 2
+        var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
+        //increment
+        increment += randoFiver;
+        //add in a new raindrop with various randomizations to certain CSS properties
+        drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+        backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+      }
+
+      $('.rain.front-row').append(drops);
+      $('.rain.back-row').append(backDrops);
+    }
+
+    $('.splat-toggle.toggle').on('click', function() {
+      $('body').toggleClass('splat-toggle');
+      $('.splat-toggle.toggle').toggleClass('active');
+      makeItRain();
+    });
+
+    $('.back-row-toggle.toggle').on('click', function() {
+      $('body').toggleClass('back-row-toggle');
+      $('.back-row-toggle.toggle').toggleClass('active');
+      makeItRain();
+    });
+
+    $('.single-toggle.toggle').on('click', function() {
+      $('body').toggleClass('single-toggle');
+      $('.single-toggle.toggle').toggleClass('active');
+      makeItRain();
+    });
+
+    makeItRain();
+
+    </script>
+
+
+    <header>
+
+  <nav id="normal">
+    <ul>
+      <li><a href="">Startseite</a></li>
+      <li><a href="">Lifestyle</a></li>
+      <li><a href="">YouTube</a>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=UeZi8a99iS0&list=PLNmsVeXQZj7qOfMI2ZNk-LXUAiXKrwDIi">JavaScript</a></li>
+          <li><a href="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU">HTML+CSS</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.zufallslink.de/zufallslink.php">Random Link</a> </li>
+    </ul>
+  </nav>
+
+  <nav id="mobile">
+
+   <div id="menu">Menü</div>
+
+	<ul>
+      <li><a href="">Startseite</a></li>
+      <li><a href="">Lifestyle</a></li>
+      <li><a href="">YouTube</a>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=UeZi8a99iS0&list=PLNmsVeXQZj7qOfMI2ZNk-LXUAiXKrwDIi">JavaScript</a></li>
+          <li><a href="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU">HTML+CSS</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.zufallslink.de/zufallslink.php">Random Link</a> </li>
+    </ul>
+  </nav>
+
+</header>
+
+  </head>
+
+    <body class="back-row-toggle splat-toggle">
+        <div class="rain front-row"></div>
+        <div class="rain back-row"></div>
+        <div class="toggles"></div>
+        <div class="rain front-row"><div class="drop" style="left: 3%; bottom: 105%; animation-delay: 0.37s; animation-duration: 0.537s;"><div class="stem" style="animation-delay: 0.37s; animation-duration: 0.537s;"></div><div class="splat" style="animation-delay: 0.37s; animation-duration: 0.537s;"></div></div><div class="drop" style="left: 5%; bottom: 103%; animation-delay: 0.80s; animation-duration: 0.580s;"><div class="stem" style="animation-delay: 0.80s; animation-duration: 0.580s;"></div><div class="splat" style="animation-delay: 0.80s; animation-duration: 0.580s;"></div></div><div class="drop" style="left: 8%; bottom: 105%; animation-delay: 0.62s; animation-duration: 0.562s;"><div class="stem" style="animation-delay: 0.62s; animation-duration: 0.562s;"></div><div class="splat" style="animation-delay: 0.62s; animation-duration: 0.562s;"></div></div><div class="drop" style="left: 10%; bottom: 103%; animation-delay: 0.77s; animation-duration: 0.577s;"><div class="stem" style="animation-delay: 0.77s; animation-duration: 0.577s;"></div><div class="splat" style="animation-delay: 0.77s; animation-duration: 0.577s;"></div></div><div class="drop" style="left: 12%; bottom: 103%; animation-delay: 0.60s; animation-duration: 0.560s;"><div class="stem" style="animation-delay: 0.60s; animation-duration: 0.560s;"></div><div class="splat" style="animation-delay: 0.60s; animation-duration: 0.560s;"></div></div><div class="drop" style="left: 17%; bottom: 109%; animation-delay: 0.41s; animation-duration: 0.541s;"><div class="stem" style="animation-delay: 0.41s; animation-duration: 0.541s;"></div><div class="splat" style="animation-delay: 0.41s; animation-duration: 0.541s;"></div></div><div class="drop" style="left: 22%; bottom: 109%; animation-delay: 0.55s; animation-duration: 0.555s;"><div class="stem" style="animation-delay: 0.55s; animation-duration: 0.555s;"></div><div class="splat" style="animation-delay: 0.55s; animation-duration: 0.555s;"></div></div><div class="drop" style="left: 27%; bottom: 109%; animation-delay: 0.90s; animation-duration: 0.590s;"><div class="stem" style="animation-delay: 0.90s; animation-duration: 0.590s;"></div><div class="splat" style="animation-delay: 0.90s; animation-duration: 0.590s;"></div></div><div class="drop" style="left: 29%; bottom: 103%; animation-delay: 0.33s; animation-duration: 0.533s;"><div class="stem" style="animation-delay: 0.33s; animation-duration: 0.533s;"></div><div class="splat" style="animation-delay: 0.33s; animation-duration: 0.533s;"></div></div><div class="drop" style="left: 34%; bottom: 109%; animation-delay: 0.40s; animation-duration: 0.540s;"><div class="stem" style="animation-delay: 0.40s; animation-duration: 0.540s;"></div><div class="splat" style="animation-delay: 0.40s; animation-duration: 0.540s;"></div></div><div class="drop" style="left: 36%; bottom: 103%; animation-delay: 0.29s; animation-duration: 0.529s;"><div class="stem" style="animation-delay: 0.29s; animation-duration: 0.529s;"></div><div class="splat" style="animation-delay: 0.29s; animation-duration: 0.529s;"></div></div><div class="drop" style="left: 39%; bottom: 105%; animation-delay: 0.42s; animation-duration: 0.542s;"><div class="stem" style="animation-delay: 0.42s; animation-duration: 0.542s;"></div><div class="splat" style="animation-delay: 0.42s; animation-duration: 0.542s;"></div></div><div class="drop" style="left: 42%; bottom: 105%; animation-delay: 0.55s; animation-duration: 0.555s;"><div class="stem" style="animation-delay: 0.55s; animation-duration: 0.555s;"></div><div class="splat" style="animation-delay: 0.55s; animation-duration: 0.555s;"></div></div><div class="drop" style="left: 45%; bottom: 105%; animation-delay: 0.65s; animation-duration: 0.565s;"><div class="stem" style="animation-delay: 0.65s; animation-duration: 0.565s;"></div><div class="splat" style="animation-delay: 0.65s; animation-duration: 0.565s;"></div></div><div class="drop" style="left: 49%; bottom: 107%; animation-delay: 0.6s; animation-duration: 0.56s;"><div class="stem" style="animation-delay: 0.6s; animation-duration: 0.56s;"></div><div class="splat" style="animation-delay: 0.6s; animation-duration: 0.56s;"></div></div><div class="drop" style="left: 53%; bottom: 107%; animation-delay: 0.56s; animation-duration: 0.556s;"><div class="stem" style="animation-delay: 0.56s; animation-duration: 0.556s;"></div><div class="splat" style="animation-delay: 0.56s; animation-duration: 0.556s;"></div></div><div class="drop" style="left: 58%; bottom: 109%; animation-delay: 0.10s; animation-duration: 0.510s;"><div class="stem" style="animation-delay: 0.10s; animation-duration: 0.510s;"></div><div class="splat" style="animation-delay: 0.10s; animation-duration: 0.510s;"></div></div><div class="drop" style="left: 61%; bottom: 105%; animation-delay: 0.52s; animation-duration: 0.552s;"><div class="stem" style="animation-delay: 0.52s; animation-duration: 0.552s;"></div><div class="splat" style="animation-delay: 0.52s; animation-duration: 0.552s;"></div></div><div class="drop" style="left: 63%; bottom: 103%; animation-delay: 0.90s; animation-duration: 0.590s;"><div class="stem" style="animation-delay: 0.90s; animation-duration: 0.590s;"></div><div class="splat" style="animation-delay: 0.90s; animation-duration: 0.590s;"></div></div><div class="drop" style="left: 67%; bottom: 107%; animation-delay: 0.83s; animation-duration: 0.583s;"><div class="stem" style="animation-delay: 0.83s; animation-duration: 0.583s;"></div><div class="splat" style="animation-delay: 0.83s; animation-duration: 0.583s;"></div></div><div class="drop" style="left: 70%; bottom: 105%; animation-delay: 0.56s; animation-duration: 0.556s;"><div class="stem" style="animation-delay: 0.56s; animation-duration: 0.556s;"></div><div class="splat" style="animation-delay: 0.56s; animation-duration: 0.556s;"></div></div><div class="drop" style="left: 74%; bottom: 107%; animation-delay: 0.53s; animation-duration: 0.553s;"><div class="stem" style="animation-delay: 0.53s; animation-duration: 0.553s;"></div><div class="splat" style="animation-delay: 0.53s; animation-duration: 0.553s;"></div></div><div class="drop" style="left: 79%; bottom: 109%; animation-delay: 0.30s; animation-duration: 0.530s;"><div class="stem" style="animation-delay: 0.30s; animation-duration: 0.530s;"></div><div class="splat" style="animation-delay: 0.30s; animation-duration: 0.530s;"></div></div><div class="drop" style="left: 83%; bottom: 107%; animation-delay: 0.8s; animation-duration: 0.58s;"><div class="stem" style="animation-delay: 0.8s; animation-duration: 0.58s;"></div><div class="splat" style="animation-delay: 0.8s; animation-duration: 0.58s;"></div></div><div class="drop" style="left: 88%; bottom: 109%; animation-delay: 0.74s; animation-duration: 0.574s;"><div class="stem" style="animation-delay: 0.74s; animation-duration: 0.574s;"></div><div class="splat" style="animation-delay: 0.74s; animation-duration: 0.574s;"></div></div><div class="drop" style="left: 90%; bottom: 103%; animation-delay: 0.54s; animation-duration: 0.554s;"><div class="stem" style="animation-delay: 0.54s; animation-duration: 0.554s;"></div><div class="splat" style="animation-delay: 0.54s; animation-duration: 0.554s;"></div></div><div class="drop" style="left: 94%; bottom: 107%; animation-delay: 0.45s; animation-duration: 0.545s;"><div class="stem" style="animation-delay: 0.45s; animation-duration: 0.545s;"></div><div class="splat" style="animation-delay: 0.45s; animation-duration: 0.545s;"></div></div><div class="drop" style="left: 97%; bottom: 105%; animation-delay: 0.42s; animation-duration: 0.542s;"><div class="stem" style="animation-delay: 0.42s; animation-duration: 0.542s;"></div><div class="splat" style="animation-delay: 0.42s; animation-duration: 0.542s;"></div></div><div class="drop" style="left: 99%; bottom: 103%; animation-delay: 0.57s; animation-duration: 0.557s;"><div class="stem" style="animation-delay: 0.57s; animation-duration: 0.557s;"></div><div class="splat" style="animation-delay: 0.57s; animation-duration: 0.557s;"></div></div><div class="drop" style="left: 104%; bottom: 109%; animation-delay: 0.92s; animation-duration: 0.592s;"><div class="stem" style="animation-delay: 0.92s; animation-duration: 0.592s;"></div><div class="splat" style="animation-delay: 0.92s; animation-duration: 0.592s;"></div></div></div>
+
+
+
+  </body>
+
+</html>

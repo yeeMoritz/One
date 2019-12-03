@@ -1,0 +1,18 @@
+@keyframes animation-1 {
+  0% {background-color: #f00}
+  10% {background-color: #ff0}
+  20% {background-color: #0f0}
+  30% {background-color: #0ff}
+  40% {background-color: #00f}
+  50% {background-color: #880088}
+  60% {background-color: #00f}
+  70% {background-color: #0ff}
+  80% {background-color: #0f0}
+  90% {background-color: #ff0}
+  100% {background-color: #f00}
+}
+
+{
+  animation-name: animation-1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;}
