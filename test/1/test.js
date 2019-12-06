@@ -1,5 +1,5 @@
 
-const speed = 1;
+const speed = 10;
 
 const moveBackground = () => {
     let mouseXPos = (event.x / window.innerWidth) * 100;
