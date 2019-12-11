@@ -10,9 +10,24 @@
   80% {background-color: #0f0}
   90% {background-color: #ff0}
   100% {background-color: #f00}
-}
 
-{
+  {  
   animation-name: animation-1;
   animation-duration: 10s;
-  animation-iteration-count: infinite;}
+  animation-iteration-count: infinite;
+
+  {
+background: url('https://images.unsplash.com/photo-1568059151110-949642101084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+background: url('https://images.unsplash.com/photo-1566590671647-bc34ac594c1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+background: url('https://images.unsplash.com/photo-1532799755889-1247a1b7f10e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80');
+background: url('https://images.unsplash.com/photo-1554188248-986adbb73be4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+background: url('https://images.unsplash.com/photo-1565638459249-c85cbb2faaa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+background: url('https://images.unsplash.com/photo-1566410834486-857b30cff4ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+background: url('https://images.unsplash.com/photo-1566303418941-917448c1df2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1443&q=80');
+background: url('https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
+background: url('https://images.unsplash.com/photo-1563305123-1548e19a200e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+background: url('https://images.unsplash.com/photo-1553949285-bdcb31ec5cba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+background: url('https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+background: url('https://images.unsplash.com/photo-1564089969562-7b8667a4adec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+background: url('https://images.unsplash.com/photo-1565638479000-5c60069c59fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+background: url('https://images.unsplash.com/photo-1574968753377-0d7d04013207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=634&q=80');

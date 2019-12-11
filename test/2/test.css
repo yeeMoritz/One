@@ -1,0 +1,9 @@
+p{
+  color: linear-gradient(#01bccd, #ff65b8, #fffa81, #000);
+  text-transform: uppercase;
+
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
